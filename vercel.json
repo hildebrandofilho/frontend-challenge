@@ -1,13 +1,13 @@
 {
    "rewrites": [
      {
-       "source": "/api/:path*",
+       "source": "/api/proxy/:path*",
        "destination": "https://cdn-dev.preoday.com/:path*"
      }
    ],
    "headers": [
      {
-       "source": "/api/:path*",
+       "source": "/api/proxy/:path*",
        "headers": [
          { "key": "Access-Control-Allow-Origin", "value": "*" },
          { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
