@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Input } from "@/components/widgets/input";
+import { Input } from "../components/widgets/input";
 import { Cart, MenuList, ModalOrder, Sections } from "../components";
-import useRestaurant from "@/hooks/useRestaurant";
+import useRestaurant from "../hooks/useRestaurant";
 import { Loading } from "../components/widgets/loading";
 import { SearchIcon } from "lucide-react";
 import styles from './restaurant.module.css';
