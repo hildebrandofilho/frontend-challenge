@@ -1,0 +1,46 @@
+{
+  "name": "frontend-challenge",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint ./src --ext .jsx,.js --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier --log-level warn --write \"./**/*.{js,jsx,css,md,json}\" --ignore-path ./.gitignore",
+    "lint": "npm run lint:format && npm run lint:fix",
+    "lint:node": "npm run lint:format && npm run lint:fix"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.1.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.336.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-router-dom": "^6.22.2",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.2.5",
+    "vite": "^5.1.0"
+  },
+  "pre-commit": "lint"
+}
