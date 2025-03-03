@@ -121,6 +121,15 @@ function Cart() {
                 );
               })}
             </div>
+            <div className={styles.cartSubTotalContainer}>
+              <p className={styles.cartSubTotalLabel}>Sub total:</p>
+              <p className={styles.cartSubTotalValue}>
+                {currencyFormatted(
+                  restaurant.ccy,
+                  cartItems.reduce((acc, item) => acc + item.price, 0)
+                )}
+              </p>
+            </div>
             <div className={styles.cartTotalContainer}>
               <p className={styles.cartTotalLabel}>Total:</p>
               <p className={styles.cartTotalValue}>

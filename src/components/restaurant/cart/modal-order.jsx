@@ -140,7 +140,7 @@ function ModalOrder() {
             style={{ backgroundColor: restaurant.webSettings.primaryColour }}
             onClick={addCartItem}
           >
-            Add to Order {currencyFormatted(restaurant.ccy, (orderItem.price + (modifierValue?.price || 0)) * quantity)}
+            Add to Order • {currencyFormatted(restaurant.ccy, (orderItem.price + (modifierValue?.price || 0)) * quantity)}
           </Button>
         </DialogFooter>
       </DialogContent>

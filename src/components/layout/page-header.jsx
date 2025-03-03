@@ -69,7 +69,7 @@ function PageHeader() {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>
-                  <NavLink to="/contact" className={routesClassNameMobile}>
+                  <NavLink to="/contato" className={routesClassNameMobile}>
                     CONTATO
                   </NavLink>
                 </DropdownMenuItem>

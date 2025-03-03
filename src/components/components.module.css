@@ -202,7 +202,7 @@
 }
 
 .sizeDefault {
-  height: 2.25rem;
+  height: 48px;
   padding: 0 1rem;
 }
 
@@ -589,6 +589,26 @@
   font-weight: 500;
   text-align: right;
   letter-spacing: 0.05em;
+}
+
+.cartSubTotalContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #dee3e9b7;
+}
+
+.cartSubTotalLabel {
+  font-size: 16px;
+  font-weight: 400;
+  color: #121212;
+}
+
+.cartSubTotalValue {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  color: #121212;
 }
 
 .cartTotalContainer {
