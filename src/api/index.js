@@ -5,7 +5,7 @@ const isLocal = window.location.hostname === "localhost";
 
 // Se estiver rodando localmente, usa caminhos relativos "/api/..."
 // Se estiver na Vercel, usa a URL completa da API externa
-const BASE_URL = isLocal ? "/api" : "https://cdn-dev.preoday.com/";
+const BASE_URL = isLocal ? "/api" : "https://cdn-dev.preoday.com";
 
 const RESTAURANT = `${BASE_URL}/challenge/venue/9`;
 const MENU = `${BASE_URL}/challenge/menu`;
